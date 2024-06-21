@@ -29,7 +29,9 @@ sequelize.authenticate()
 
 const db = {}
 
+//This allows other parts of your application to access Sequelize if needed.
 db.Sequelize = Sequelize
+// This provides access to the database connection throughout the application.
 db.sequelize = sequelize
 
 db.users = require('./userModel.js')(sequelize, DataTypes)

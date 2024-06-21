@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const userRoutes = require('./src/routes/userRoutes.js');
 app.use('/api/users', userRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT =  3000;
 
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);

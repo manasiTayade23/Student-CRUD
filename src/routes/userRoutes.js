@@ -8,6 +8,8 @@ const userRouter = express.Router();
 userRouter.post('/signup',validateUserInput, userController.signup );
 
 // Login route (if you have a login controller, uncomment and define it)
-userRouter.post('/signin',validateToken, userController.signin);
+userRouter.post('/signin', userController.signin);
+
+userRouter.get('/getDetails/:id',validateToken,userController.getDetails);
 
 module.exports = userRouter;
