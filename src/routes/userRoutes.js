@@ -10,6 +10,6 @@ userRouter.post('/signup',validateUserInput, userController.signup );
 // Login route (if you have a login controller, uncomment and define it)
 userRouter.post('/signin', userController.signin);
 
-userRouter.get('/getDetails/:id',validateToken,userController.getDetails);
+userRouter.get('/getDetails',validateToken,userController.getDetails);
 
 module.exports = userRouter;

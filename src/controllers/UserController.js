@@ -93,15 +93,8 @@ const signin = async (req, res) => {
 };
 
 const getDetails = async (req, res) => {
-  const userId = req.params.id;
-
-  // Ensure the user can only access their own profile
-  if (req.user.id !== parseInt(userId)) {
-    return res.status(403).json({
-      success: false,
-      message: "Access forbidden:",
-    });
-  }
+  //fetching the user based on the token which has been provided
+  const userId = req.user.id; // Use the user ID from the authenticated token
 
   try {
     const user = await User.findByPk(userId, {
@@ -123,7 +116,7 @@ const getDetails = async (req, res) => {
     res.status(500).json({
       success: false,
       message: "Something went wrong",
-      error: [],
+      error: error.message,
     });
   }
 };
