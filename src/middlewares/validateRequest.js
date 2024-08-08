@@ -19,16 +19,16 @@ function validateUserInput(req, res, next) {
     });
   }
   // Validate date of birth if provided
-  if (dob) {
-    const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
-    if (!dobRegex.test(dob)) {
-      return res.status(400).json({
-        success: false,
-        message: "Date of birth should be in yyyy-mm-dd format",
-        data: [],
-      });
-    }
-  }
+  // if (dob) {
+  //   const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
+  //   if (!dobRegex.test(dob)) {
+  //     return res.status(400).json({
+  //       success: false,
+  //       message: "Date of birth should be in yyyy-mm-dd format",
+  //       data: [],
+  //     });
+  //   }
+  // }
   // If all required fields are present, continue
   next();
 }
