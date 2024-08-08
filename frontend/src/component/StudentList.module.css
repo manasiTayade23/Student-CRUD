@@ -1,0 +1,154 @@
+.container {
+    padding: 20px;
+  }
+  
+  .searchContainer {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .searchButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .studentTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .studentTable th, .studentTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .whiteRow {
+    background-color: white;
+  }
+  
+  .grayRow {
+    background-color: #f2f2f2;
+  }
+  
+  .actionButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .editButton {
+    color: green;
+  }
+  
+  .deleteButton {
+    color: red;
+  }
+  
+  /* New styles for centering the edit form */
+  .editForm {
+    position: fixed; /* Fixes the form in place relative to the viewport */
+    top: 50%; /* Move the form to the middle of the viewport */
+    left: 50%; /* Move the form to the middle of the viewport */
+    transform: translate(-50%, -50%); /* Offset by half the form's width and height */
+    background-color: white; /* Background color for visibility */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    z-index: 1000; /* Ensures the form is on top of other elements */
+    max-width: 500px; /* Set a maximum width for the form */
+    width: 100%; /* Full width within max-width */
+  }
+  
+  .editForm h3 {
+    margin-bottom: 20px; /* Space between heading and form fields */
+  }
+  
+  .editForm label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space between fields */
+  }
+  
+  .editForm input {
+    width: calc(100% - 20px); /* Full width input with padding */
+    padding: 8px; /* Padding inside input */
+    margin-top: 5px; /* Space above input */
+    border: 1px solid #ccc; /* Border color for input */
+    border-radius: 4px; /* Rounded corners for input */
+  }
+  
+  .editForm button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color for button */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .editForm button[type="submit"] {
+    background-color: #28a745; /* Green color for submit button */
+  }
+  
+  .editForm button:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+  }
+  
+  /* Styles for confirmation dialog */
+  .confirmDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .warningIcon {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .confirmButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .noButton, .yesButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .noButton {
+    background-color: blue;
+    color: white;
+  }
+  
+  .yesButton {
+    background-color: red;
+    color: white;
+  }
+  

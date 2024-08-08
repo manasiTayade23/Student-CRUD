@@ -1,0 +1,71 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center; /* Center the form content */
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left; /* Align labels to the left for better readability */
+}
+
+input {
+  width: calc(100% - 22px); /* Adjust width for padding and border */
+  padding: 10px;
+  margin: 0 auto 12px auto; /* Center input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #28a745; /* Green color for the button */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Center button horizontally */
+  margin: 0 auto; /* Center button horizontally */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+p {
+  font-size: 14px;
+}
+
+p.error {
+  color: #ff0000;
+}
+
+p.success {
+  color: #00ff00;
+}
+
+/* Add asterisks to required fields */
+label.required:after {
+  content: ' *';
+  color: #ff0000;
+}
